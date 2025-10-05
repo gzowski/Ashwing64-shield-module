@@ -13,18 +13,29 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layout { // Default Layer
+        DEFAULT { // Default Layer
             bindings = <
-                &kp ESC	&studio_unlock	&kp N2	&kp N3	&kp N4	&kp N5			&kp N6  &kp N7	&kp N8	&kp N9	&kp N0  
-		&kp ESC &kp Q  &kp W  &kp F  &kp P  &kp G			&kp J  &kp L  &kp U  &kp Y  &kp Y            
-		&kp ESC &kp A  &kp R  &kp S  &kp T  &kp D                       &kp H  &kp N  &kp E  &kp I  &kp O
-		&kp ESC &kp Z  &kp X  &kp C  &kp V  &kp B                       &kp K  &kp M  &kp M  &kp M  &kp M
-                &kp ESC &kp Z  &kp X  &kp C  &kp V  &kp B                       &kp K  &kp M  &kp M  &kp M  &kp M
-                &kp ESC &kp Z  &kp X  &kp C  &kp V  &kp B                       &kp K  &kp M  &kp M
+                &kp ESC	&kb N1	&kp N2	&kp N3	&kp N4	&kp N5				&kp N6  &kp N7	&kp N8	&kp N9	&kp N0  
+		&kp TAB &kp Q  &kp W  &kp F  &kp P  &kp G				&kp J  &kp L  &kp U  &kp Y  &kp SEMICOLON            
+		&kp LCTRL &kp A  &kp R  &kp S  &kp T  &kp D                       	&kp H  &kp N  &kp E  &kp I  &kp O
+		&kp LSHFT &kp Z  &kp X  &kp C  &kp V  &kp B                       	&kp K  &kp M  &kp M  &kp M  &kp SLASH
+                &kp BSLH &kp LEFT_ARROW  &kp DOWN_ARROW  &kp MO(LOWER)  &kp LGUI  &kp LALT	&kp BSPC  &kp MO(RAISE)  &kp DEL  &kp UP_ARROW  &kp RIGHT_ARROW
+                /* Center Cluster */ &kp LBKT &kp SPACE &kp ENTER &kp RBKT  
+                /* Right most row */ &kp GRAVE  &kp MINUS  &kp SQT  &kp RSHFT  &kp EQUAL
 >;
         };
-	function_layout {
+	RAISE {
 		bindings = <
+                &kp studio_unlock &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
+                &kp ESC &kp Q  &kp W  &kp F  &kp P  &kp G                       &kp J  &kp L  &kp U  &kp Y  &kp Y
+                &kp ESC &kp A  &kp R  &kp S  &kp T  &kp D                       &kp H  &kp N  &kp E  &kp I  &kp O
+                &kp ESC &kp Z  &kp X  &kp C  &kp V  &kp B                       &kp K  &kp M  &kp M  &kp M  &kp M
+                &kp ESC &kp Z  &kp X  &kp C  &kp V  &kp B                       &kp K  &kp M  &kp M  &kp M  &kp M
+                &kp ESC &kp Z  &kp X  &kp C  &kp V  &kp B                       &kp K  &kp M  &kp M
+            >;
+        };
+	LOWER {
+                bindings = <
                 &kp ESC &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
                 &kp ESC &kp Q  &kp W  &kp F  &kp P  &kp G                       &kp J  &kp L  &kp U  &kp Y  &kp Y
                 &kp ESC &kp A  &kp R  &kp S  &kp T  &kp D                       &kp H  &kp N  &kp E  &kp I  &kp O
