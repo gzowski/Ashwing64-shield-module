@@ -20,8 +20,7 @@
 		&kp LCTRL &kp A  &kp R  &kp S  &kp T  &kp D                       	&kp H  &kp N  &kp E  &kp I  &kp O
 		&kp LSHFT &kp Z  &kp X  &kp C  &kp V  &kp B                       	&kp K  &kp M  &kp M  &kp M  &kp SLASH
                 &kp BSLH &kp LEFT  &kp DOWN  &mo LOWER  &kp LGUI  &kp LALT	&kp BSPC  &mo RAISE  &kp DEL  &kp UP  &kp RIGHT
-                /* Center Cluster */ &kp LBKT &kp SPACE &kp ENTER &kp RBKT  
-                /* Right most row */ &kp GRAVE  &kp MINUS  &kp SQT  &kp RSHFT  &kp EQUAL
+                &kp LBKT &kp SPACE &kp ENTER &kp RBKT  &kp GRAVE  &kp MINUS  &kp SQT  &kp RSHFT  &kp EQUAL
 >;
         };
 	RAISE {
