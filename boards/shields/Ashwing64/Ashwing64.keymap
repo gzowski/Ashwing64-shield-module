@@ -34,7 +34,7 @@
                 &trans &kp LBRC  &kp RBRC  &kp LPAR  &kp RPAR  &kp AT          &trans  &kp KP_SLASH  &kp KP_ASTERISK  &kp KP_EQUAL  &kp KP_PLUS
                 &trans &kp A  &kp R  &kp S  &kp T  &kp D                       &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
                 &trans &kp Z  &kp X  &kp C  &kp V  &kp B                       &trans  &trans  &trans  &trans  &trans
-                &kp F11 &kp Z  &kp X  &kp C  &kp V  &kp B                      &trans  &trans  &kp INS  &trans  &kp trans
+                &kp F11 &kp Z  &kp X  &kp C  &kp V  &kp B                      &trans  &trans  &kp INS  &trans  &trans
                 &trans &trans  &trans  &trans  &kp PSCRN  &trans               &trans  &trans  &kp F12
             >;
         };
