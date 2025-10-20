@@ -9,12 +9,7 @@
 
 / {
         rgb_underglow: rgb_underglow {
-        compatible = "zmk,underglow";
-        label = "Underglow";
         chain_length = <5>;
-        gpio = <&pro_micro 1 GPIO_ACTIVE_HIGH>;
-        color_order = "RGB";
-        brightness = <200>;            // Optional: default brightness (0–255)
     };
 };
 
@@ -37,7 +32,6 @@
     compatible = "zmk,kscan-gpio-matrix";
     diode-direction = "col2row";
     wakeup-source;
-
     col-gpios = <&pro_micro 21 GPIO_ACTIVE_HIGH>,
                 <&pro_micro 20 GPIO_ACTIVE_HIGH>,
                 <&pro_micro 19 GPIO_ACTIVE_HIGH>,
