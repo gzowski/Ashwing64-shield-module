@@ -22,16 +22,6 @@
                 &kp LBKT &kp SPACE &kp ENTER &kp RBKT  &kp GRAVE  &kp MINUS  &kp SQT  &kp RSHFT  &kp EQUAL
 >;
         };
-	secondary_layout {
-		bindings = <
-                &trans &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10
-                &trans &kp LBRC  &kp RBRC  &kp LPAR  &kp RPAR  &kp AT          &trans  &kp KP_SLASH  &kp KP_ASTERISK  &kp KP_EQUAL  &kp KP_PLUS
-                &trans &kp A  &kp R  &kp S  &kp T  &kp D                       &trans  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
-                &trans &kp Z  &kp X  &kp C  &kp V  &kp B                       &trans  &trans  &trans  &trans  &trans
-                &kp F11 &kp Z  &kp X  &kp C  &kp V  &kp B                      &trans  &trans  &kp INS  &trans  &trans
-                &trans &trans  &trans  &trans  &kp PSCRN  &trans               &trans  &trans  &kp F12
-            >;
-        };
 	function_layout {
                 bindings = <
                 &rgb_ug RGB_TOG &rgb_ug RGB_EFF &rgb_ug RGB_EFR  &rgb_ug RGB_HUI  &rgb_ug RGB_HUD  &rgb_ug RGB_SAI  &rgb_ug RGB_SAD  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &rgb_ug RGB_SPI  &rgb_ug RGB_SPD
