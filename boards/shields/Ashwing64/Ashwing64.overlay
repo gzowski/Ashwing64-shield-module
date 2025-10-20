@@ -8,18 +8,23 @@
 #include "Ashwing64-layouts.dtsi"
 
 / {
-        rgb_underglow: rgb_underglow {
-        compatible = "zmk,underglow";
-        label = "Underglow";
-        chain_length = <5>;
-        gpio = <&pro_micro 1 GPIO_ACTIVE_HIGH>;
-        color_order = "RGB";
-        brightness = <200>;            // Optional: default brightness (0–255)
+    chosen {
+        zmk,underglow = &led_strip;
+        zmk,physical-layout = &DEFAULT;
     };
 };
 
 / {
-  chosen { zmk,physical-layout = &DEFAULT; };
+    led_strip: ws2812 {
+        compatible = "worldsemi,ws2812-pio";
+        label = "Underglow";
+        chain-length = <5>;
+        color-mapping = <LED_COLOR_ID_RED LED_COLOR_ID_GREEN LED_COLOR_ID_BLUE>;
+        brightness = <200>;
+
+        gpios = <&pio0 1 GPIO_ACTIVE_HIGH>;   // Pin GP1 (data line)
+    };
+};
 
   default_transform: keymap_transform0 {
     compatible = "zmk,matrix-transform";
@@ -38,26 +43,26 @@
     diode-direction = "row2col";
     wakeup-source;
 
-    col-gpios = <&pro_micro 21 GPIO_ACTIVE_HIGH>,
-                <&pro_micro 20 GPIO_ACTIVE_HIGH>,
-                <&pro_micro 19 GPIO_ACTIVE_HIGH>,
-                <&pro_micro 18 GPIO_ACTIVE_HIGH>,
-                <&pro_micro 15 GPIO_ACTIVE_HIGH>,
-		<&pro_micro 14 GPIO_ACTIVE_HIGH>,
-		<&pro_micro 6 GPIO_ACTIVE_HIGH>,
-		<&pro_micro 5 GPIO_ACTIVE_HIGH>,
-		<&pro_micro 4 GPIO_ACTIVE_HIGH>,
-		<&pro_micro 3 GPIO_ACTIVE_HIGH>,
-		<&pro_micro 2 GPIO_ACTIVE_HIGH>;
+    col-gpios = <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+                <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+		<&pro_micro 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+		<&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+		<&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+		<&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+		<&pro_micro 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
+		<&pro_micro 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
 
 
 
-    row-gpios = <&pro_micro 0  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                <&pro_micro 16  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                <&pro_micro 7  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                <&pro_micro 8  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                <&pro_micro 10  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-                <&pro_micro 9  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+    row-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>,
+                <&pro_micro 16 GPIO_ACTIVE_HIGH>,
+                <&pro_micro 7 GPIO_ACTIVE_HIGH>,
+                <&pro_micro 8 GPIO_ACTIVE_HIGH>,
+                <&pro_micro 10 GPIO_ACTIVE_HIGH>,
+                <&pro_micro 9 GPIO_ACTIVE_HIGH>;
   };
 
 };
