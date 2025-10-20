@@ -8,7 +8,9 @@
 #include "Ashwing64-layouts.dtsi"
 
 / {
-  chosen { zmk,physical-layout = &DEFAULT,underglow = &led_strip; };
+  chosen { zmk,physical-layout = &DEFAULT; 
+           zmk,underglow = &led_strip;
+          };
 
   default_transform: keymap_transform0 {
     compatible = "zmk,matrix-transform";
