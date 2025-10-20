@@ -1,3 +1,4 @@
+
 /*
  * Copyright (c) 2024 The ZMK Contributors
  *
@@ -7,7 +8,7 @@
 #include <physical_layouts.dtsi>
 
 / {
-    default_layout: default_layout {
+    DEFAULT: DEFAULT {
         compatible = "zmk,physical-layout";
         display-name = "Ashwing64";
         transform = <&default_transform>;
@@ -97,7 +98,7 @@
 / {
     keypad_position_map {
         Ashwing64_map: Ashwing64 {
-            physical-layout = <&default_layout>;
+            physical-layout = <&DEFAULT>;
             positions
             = <0  1  2  3  4  5  6  7  8  9  10>
             , <11 12 13 14 15 16 17 18 19 20 21>
@@ -109,4 +110,3 @@
         };
     };
 };
-
