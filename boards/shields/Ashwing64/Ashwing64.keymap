@@ -18,7 +18,7 @@
 		&kp TAB &kp Q  &kp W  &kp F  &kp P  &kp G				&kp J  &kp L  &kp U  &kp Y  &kp SEMICOLON            
 		&kp LCTRL &kp A  &kp R  &kp S  &kp T  &kp D                       	&kp H  &kp N  &kp E  &kp I  &kp O
 		&kp LSHFT &kp Z  &kp X  &kp C  &kp V  &kp B                       	&kp K  &kp M  &kp COMMA  &kp DOT  &kp SLASH
-                &kp BACKSLASH &kp LEFT  &kp DOWN  &mo 1  &kp LGUI  &kp LALT	&kp BSPC  &mo 2  &kp DEL  &kp UP  &kp RIGHT
+                &kp BACKSLASH &kp LEFT  &kp DOWN  &mo 1  &kp LGUI  &kp LALT	&kp BSPC  &mo 1  &kp DEL  &kp UP  &kp RIGHT
                 &kp LBKT &kp SPACE &kp ENTER &kp RBKT  &kp GRAVE  &kp MINUS  &kp SQT  &kp RSHFT  &kp EQUAL
 >;
         };
@@ -31,6 +31,6 @@
                 &trans &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
                 &trans &trans  &trans  &trans  &kp EQUAL  &kp APOS                 &trans  &trans  &trans
             >;
-        };
+	};
     };
  };
