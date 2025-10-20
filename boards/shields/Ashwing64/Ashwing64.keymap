@@ -13,7 +13,6 @@
     chain-length = <5>;
 };
 
-
 / {
     keymap {
         compatible = "zmk,keymap";
