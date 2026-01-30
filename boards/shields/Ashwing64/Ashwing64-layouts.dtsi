@@ -12,7 +12,6 @@
         compatible = "zmk,physical-layout";
         display-name = "Ashwing64";
         transform = <&default_transform>;
-        kscan = <&kscan0>;
 
         keys  //                     w   h    x    y     rot    rx    ry
             //Left Row0
