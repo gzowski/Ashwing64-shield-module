@@ -1,0 +1,9 @@
+file_format: "1"
+id: ashwing64
+name: Ashwing64
+type: shield
+url: https://github.com/gzowski/Ashwing64
+requires: [pro_micro]
+features:
+  - keys
+  - underglow

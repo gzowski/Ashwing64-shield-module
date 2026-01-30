@@ -1,0 +1,4 @@
+if SHIELD_ASHWING64
+config ZMK_KEYBOARD_NAME
+	default "Ashwing64"
+endif
