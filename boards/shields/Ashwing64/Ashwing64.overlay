@@ -6,11 +6,12 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "Ashwing64-layouts.dtsi"
 / {
-  chosen { 
+chosen { 
     zmk,physical-layout = &DEFAULT; 
     zmk,underglow = &led_strip;
-    zmk,matrix-driver = &kscan0;  // Add this line
-  };
+    zmk,kscan = &kscan0;           // ADD THIS LINE
+    zmk,matrix-driver = &kscan0;
+};
   
   default_transform: keymap_transform0 {
     compatible = "zmk,matrix-transform";
